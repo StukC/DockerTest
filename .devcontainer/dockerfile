@@ -1,0 +1,6 @@
+FROM mcr.microsoft.com/devcontainers/base:ubuntu
+
+# Install package
+RUN apt-get update && \
+    pip install django \
+    apt-get install -y ffmpeg
